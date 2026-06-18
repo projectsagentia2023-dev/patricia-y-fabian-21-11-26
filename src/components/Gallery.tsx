@@ -45,7 +45,7 @@ export default function Gallery() {
       <ScrollReveal>
         <div className="mx-auto max-w-6xl">
           <div className="mb-12 text-center">
-            <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-gold-500">
+            <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-green-700">
               Nuestros momentos
             </p>
             <h2 className="font-serif text-3xl font-light text-beige-900 md:text-4xl">
@@ -59,7 +59,7 @@ export default function Gallery() {
                 key={image}
                 type="button"
                 onClick={() => setSelectedIndex(index)}
-                className="group mb-4 block w-full break-inside-avoid overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-400"
+                className="group mb-4 block w-full break-inside-avoid overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-green-600"
               >
                 <div className="relative overflow-hidden">
                   <Image
@@ -101,7 +101,7 @@ export default function Gallery() {
               e.stopPropagation();
               goToPrevious();
             }}
-            className="absolute left-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all hover:border-gold-400 hover:text-gold-400 md:flex"
+            className="absolute left-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all hover:border-green-400 hover:text-green-400 md:flex"
             aria-label="Anterior"
           >
             ‹
@@ -128,7 +128,7 @@ export default function Gallery() {
               e.stopPropagation();
               goToNext();
             }}
-            className="absolute right-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all hover:border-gold-400 hover:text-gold-400 md:flex"
+            className="absolute right-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all hover:border-green-400 hover:text-green-400 md:flex"
             aria-label="Siguiente"
           >
             ›

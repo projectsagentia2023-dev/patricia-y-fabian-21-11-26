@@ -3,10 +3,10 @@ import ScrollReveal from "./ScrollReveal";
 
 export default function EventInfo() {
   return (
-    <section className="bg-beige-100 px-6 py-20">
+    <section className="bg-green-50/60 px-6 py-20">
       <ScrollReveal>
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-gold-500">
+          <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-green-700">
             Detalles del evento
           </p>
           <h2 className="mb-14 font-serif text-3xl font-light text-beige-900 md:text-4xl">
@@ -14,9 +14,9 @@ export default function EventInfo() {
           </h2>
 
           <div className="grid gap-8 md:grid-cols-3">
-            <div className="group border border-beige-300/60 bg-white p-8 transition-all duration-500 hover:border-gold-300 hover:shadow-lg">
-              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-gold-300">
-                <svg className="h-5 w-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="group border border-green-200/80 bg-white p-8 transition-all duration-500 hover:border-green-700 hover:shadow-lg">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-green-600">
+                <svg className="h-5 w-5 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -26,9 +26,9 @@ export default function EventInfo() {
               <p className="font-serif text-xl text-beige-900">{eventData.date}</p>
             </div>
 
-            <div className="group border border-beige-300/60 bg-white p-8 transition-all duration-500 hover:border-gold-300 hover:shadow-lg">
-              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-gold-300">
-                <svg className="h-5 w-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="group border border-green-200/80 bg-white p-8 transition-all duration-500 hover:border-green-700 hover:shadow-lg">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-green-600">
+                <svg className="h-5 w-5 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -38,9 +38,9 @@ export default function EventInfo() {
               <p className="font-serif text-xl text-beige-900">{eventData.time}</p>
             </div>
 
-            <div className="group border border-beige-300/60 bg-white p-8 transition-all duration-500 hover:border-gold-300 hover:shadow-lg">
-              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-gold-300">
-                <svg className="h-5 w-5 text-gold-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="group border border-green-200/80 bg-white p-8 transition-all duration-500 hover:border-green-700 hover:shadow-lg">
+              <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border border-green-600">
+                <svg className="h-5 w-5 text-green-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
@@ -56,7 +56,7 @@ export default function EventInfo() {
             href={eventData.mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-12 inline-block border border-gold-400 bg-gold-400 px-10 py-4 font-serif text-sm uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-gold-500"
+            className="mt-12 inline-block border border-green-800 bg-green-800 px-10 py-4 font-serif text-sm uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-green-700"
           >
             Cómo llegar
           </a>
