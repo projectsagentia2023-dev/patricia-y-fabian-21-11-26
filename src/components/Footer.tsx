@@ -4,11 +4,11 @@ export default function Footer() {
   const year = new Date(eventData.dateISO).getFullYear();
 
   return (
-    <footer className="border-t border-green-200 bg-white px-6 py-12">
+    <footer className="border-t border-gold-200 bg-white px-6 py-12">
       <div className="mx-auto max-w-4xl text-center">
         <p className="font-serif text-2xl text-beige-900 md:text-3xl">
           {eventData.primaryName}
-          <span className="mx-2 text-green-700">&amp;</span>
+          <span className="mx-2 text-gold-700">&amp;</span>
           {eventData.secondaryName}
         </p>
 
@@ -16,7 +16,7 @@ export default function Footer() {
           {year}
         </p>
 
-        <div className="mx-auto my-8 h-px w-16 bg-green-600" />
+        <div className="mx-auto my-8 h-px w-16 bg-gold-600" />
 
         <p className="font-serif text-sm text-beige-500">
           Organización y coordinación:{" "}
@@ -24,7 +24,7 @@ export default function Footer() {
             href={eventData.organizer.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-700 transition-colors hover:text-green-600"
+            className="text-gold-700 transition-colors hover:text-gold-600"
           >
             SR EVENTOS
           </a>

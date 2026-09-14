@@ -117,7 +117,7 @@ export default function RSVPForm() {
   };
 
   const inputClass =
-    "w-full border border-beige-300 bg-white px-4 py-3 font-serif text-beige-900 outline-none transition-colors focus:border-green-700";
+    "w-full border border-beige-300 bg-white px-4 py-3 font-serif text-beige-900 outline-none transition-colors focus:border-gold-700";
 
   const errorClass = "mt-1 text-sm text-red-600";
 
@@ -126,7 +126,7 @@ export default function RSVPForm() {
       <ScrollReveal>
         <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
-            <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-green-700">
+            <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-gold-700">
               RSVP
             </p>
             <h2 className="font-serif text-3xl font-light text-beige-900 md:text-4xl">
@@ -138,7 +138,7 @@ export default function RSVPForm() {
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8" noValidate>
-            <div className="border border-green-100 bg-green-50/40 p-6 md:p-8">
+            <div className="border border-gold-100 bg-gold-50/40 p-6 md:p-8">
               <h3 className="mb-6 font-serif text-lg text-beige-900">
                 Invitado principal
               </h3>
@@ -179,7 +179,7 @@ export default function RSVPForm() {
             </div>
 
             {additionalGuests.map((guest, index) => (
-              <div key={guest.id} className="border border-green-100 bg-green-50/40 p-6 md:p-8">
+              <div key={guest.id} className="border border-gold-100 bg-gold-50/40 p-6 md:p-8">
                 <div className="mb-6 flex items-center justify-between">
                   <h3 className="font-serif text-lg text-beige-900">
                     Invitado adicional {index + 1}
@@ -238,14 +238,14 @@ export default function RSVPForm() {
             <button
               type="button"
               onClick={addGuest}
-              className="w-full border border-dashed border-green-400 py-4 font-serif text-sm uppercase tracking-[0.15em] text-green-700 transition-all hover:border-green-700 hover:bg-green-50"
+              className="w-full border border-dashed border-gold-400 py-4 font-serif text-sm uppercase tracking-[0.15em] text-gold-700 transition-all hover:border-gold-700 hover:bg-gold-50"
             >
               + Agregar otro invitado
             </button>
 
             <button
               type="submit"
-              className="w-full border border-green-800 bg-green-800 py-4 font-serif text-sm uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-green-700"
+              className="w-full border border-gold-800 bg-gold-800 py-4 font-serif text-sm uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-gold-700"
             >
               Enviar confirmación por WhatsApp
             </button>

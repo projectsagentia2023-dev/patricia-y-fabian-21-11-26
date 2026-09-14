@@ -29,11 +29,11 @@ function calculateTimeLeft(): TimeLeft {
 function TimeBlock({ value, label }: { value: number; label: string }) {
   return (
     <div className="group flex flex-col items-center">
-      <div className="relative flex h-20 w-20 items-center justify-center border border-green-300/50 bg-white shadow-sm transition-all duration-500 group-hover:border-green-700 group-hover:shadow-md md:h-28 md:w-28">
-        <span className="font-serif text-3xl text-green-800 md:text-5xl">
+      <div className="relative flex h-20 w-20 items-center justify-center border border-gold-300/50 bg-white shadow-sm transition-all duration-500 group-hover:border-gold-700 group-hover:shadow-md md:h-28 md:w-28">
+        <span className="font-serif text-3xl text-gold-800 md:text-5xl">
           {String(value).padStart(2, "0")}
         </span>
-        <div className="absolute -bottom-px left-0 h-0.5 w-0 bg-green-700 transition-all duration-500 group-hover:w-full" />
+        <div className="absolute -bottom-px left-0 h-0.5 w-0 bg-gold-700 transition-all duration-500 group-hover:w-full" />
       </div>
       <span className="mt-3 font-serif text-xs uppercase tracking-[0.2em] text-beige-700 md:text-sm">
         {label}
@@ -53,10 +53,10 @@ export default function Countdown() {
   }, []);
 
   return (
-    <section className="bg-green-50 px-6 py-20">
+    <section className="bg-gold-50 px-6 py-20">
       <ScrollReveal>
         <div className="mx-auto max-w-4xl text-center">
-          <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-green-700">
+          <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-gold-700">
             Faltan
           </p>
           <h2 className="mb-12 font-serif text-3xl font-light text-beige-900 md:text-4xl">

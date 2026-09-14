@@ -10,10 +10,15 @@
   --color-beige-900: #3d3630;
 
   --color-gold-50: #fdf9ef;
+  --color-gold-100: #fbf3df;
+  --color-gold-200: #f2e4c0;
   --color-gold-300: #e8d5a3;
   --color-gold-400: #c9a962;
   --color-gold-500: #b8944a;
   --color-gold-600: #9a7b3c;
+  --color-gold-700: #7a602c;
+  --color-gold-800: #5c4720;
+  --color-gold-900: #403014;
 
   --color-green-50: #f3f7f5;
   --color-green-100: #e4ede8;
@@ -73,6 +78,6 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-green-200);
-  color: var(--color-green-900);
+  background-color: var(--color-gold-200);
+  color: var(--color-gold-900);
 }

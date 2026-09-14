@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Countdown from "@/components/Countdown";
+import MusicPlayer from "@/components/MusicPlayer";
 import Gallery from "@/components/Gallery";
 import EventInfo from "@/components/EventInfo";
 import RSVPForm from "@/components/RSVPForm";
@@ -12,6 +13,7 @@ export default function Home() {
     <main>
       <Hero />
       <Countdown />
+      <MusicPlayer />
       <Gallery />
       <EventInfo />
       <RSVPForm />
