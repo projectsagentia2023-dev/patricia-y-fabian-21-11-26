@@ -37,7 +37,7 @@ export default function EventInfo() {
                 <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em] text-beige-700">
                   Hora
                 </h3>
-                <p className="font-serif text-xl text-beige-900">20:40 hs</p>
+                <p className="font-serif text-xl text-beige-900">20:30 hs</p>
               </div>
 
               <div className="group border border-gold-200/80 bg-white p-8 transition-all duration-500 hover:border-gold-700 hover:shadow-lg">
@@ -50,7 +50,7 @@ export default function EventInfo() {
                 <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em] text-beige-700">
                   Dirección
                 </h3>
-                <p className="font-serif text-lg text-beige-900">Catedral vasilica nuestra señora de la paz; ALEJANDRO SAENZ 438</p>
+                <p className="font-sans text-base font-medium text-beige-900">Catedral Basílica Nuestra Señora de la Paz; ALEJANDRO SAENZ 438</p>
               </div>
             </div>
           </div>
