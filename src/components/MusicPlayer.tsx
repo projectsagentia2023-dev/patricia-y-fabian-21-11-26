@@ -9,10 +9,10 @@ export default function MusicPlayer() {
 
   useEffect(() => {
     const audio = new Audio("/Ed Sheeran - Perfect (Official Music Video).mp3");
-    audio.currentTime = 16;
+    audio.currentTime = 22;
 
     audio.addEventListener('ended', () => {
-      audio.currentTime = 16;
+      audio.currentTime = 22;
       audio.play().catch(console.error);
     });
 
