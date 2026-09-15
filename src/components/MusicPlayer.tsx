@@ -50,7 +50,7 @@ export default function MusicPlayer() {
       </p>
       <button
         onClick={togglePlay}
-        className="flex h-16 w-16 items-center justify-center rounded-full text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-4"
+        className="mx-auto flex h-16 w-16 items-center justify-center rounded-full text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-4"
         style={{ backgroundColor: "#2d4a3a", boxShadow: "0 0 0 0 #8fb09c" }}
         aria-label={isPlaying ? "Pausar música" : "Reproducir música"}
       >

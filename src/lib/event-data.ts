@@ -26,7 +26,6 @@ export const galleryImages = [
   "IMG-20260614-WA0023.jpg",
   "IMG-20260614-WA0024.jpg",
   "IMG-20260614-WA0025.jpg",
-  "IMG-20260614-WA0026.jpg",
 ] as const;
 
 export const heroImage = "IMG-20260614-WA0017.jpg";
