@@ -39,10 +39,10 @@ export default function EventInfo() {
 
       <div className="mx-auto max-w-4xl text-center relative z-10">
         <ScrollReveal variant="fade-down" duration={800}>
-          <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#3d5c4a" }}>
+          <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#152920" }}>
             Detalles del evento
           </p>
-          <h2 className="mb-14 font-serif text-3xl font-light md:text-4xl" style={{ color: "#1e3a2f" }}>
+          <h2 className="mb-14 font-serif text-3xl font-light md:text-4xl" style={{ color: "#152920" }}>
             Información del evento
           </h2>
         </ScrollReveal>
@@ -56,7 +56,7 @@ export default function EventInfo() {
                 <LeafDecor className="w-6 h-10 -rotate-12 opacity-70" />
                 <LeafDecor className="w-5 h-8 rotate-6 opacity-60" />
               </div>
-              <h3 className="font-serif text-2xl font-light" style={{ color: "#1e3a2f" }}>Ceremonia religiosa</h3>
+              <h3 className="font-serif text-2xl font-light" style={{ color: "#152920" }}>Ceremonia religiosa</h3>
               <div className="flex gap-1">
                 <LeafDecor className="w-5 h-8 -rotate-6 opacity-60" />
                 <LeafDecor className="w-6 h-10 rotate-12 opacity-70" />
@@ -68,37 +68,37 @@ export default function EventInfo() {
             <ScrollReveal variant="fade-left" duration={800}>
               <SectionCard>
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border" style={{ borderColor: "#3d5c4a" }}>
-                  <svg className="h-5 w-5" style={{ color: "#3d5c4a" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5" style={{ color: "#152920" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#3d5c4a" }}>Fecha</h3>
-                <p className="font-serif text-xl" style={{ color: "#1e3a2f" }}>{eventData.date}</p>
+                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#152920" }}>Fecha</h3>
+                <p className="font-serif text-xl" style={{ color: "#152920" }}>{eventData.date}</p>
               </SectionCard>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-up" delay={100} duration={800}>
               <SectionCard>
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border" style={{ borderColor: "#3d5c4a" }}>
-                  <svg className="h-5 w-5" style={{ color: "#3d5c4a" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5" style={{ color: "#152920" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#3d5c4a" }}>Hora</h3>
-                <p className="font-serif text-xl" style={{ color: "#1e3a2f" }}>20:30 hs</p>
+                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#152920" }}>Hora</h3>
+                <p className="font-serif text-xl" style={{ color: "#152920" }}>20:30 hs</p>
               </SectionCard>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-right" delay={200} duration={800}>
               <SectionCard>
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border" style={{ borderColor: "#3d5c4a" }}>
-                  <svg className="h-5 w-5" style={{ color: "#3d5c4a" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5" style={{ color: "#152920" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#3d5c4a" }}>Dirección</h3>
-                <p className="font-sans text-base font-medium" style={{ color: "#1e3a2f" }}>Catedral Basílica Nuestra Señora de la Paz; ALEJANDRO SAENZ 438</p>
+                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#152920" }}>Dirección</h3>
+                <p className="font-sans text-base font-medium" style={{ color: "#152920" }}>Catedral Basílica Nuestra Señora de la Paz; ALEJANDRO SAENZ 438</p>
               </SectionCard>
             </ScrollReveal>
           </div>
@@ -122,7 +122,7 @@ export default function EventInfo() {
                 <LeafDecor className="w-6 h-10 -rotate-12 opacity-70" />
                 <LeafDecor className="w-5 h-8 rotate-6 opacity-60" />
               </div>
-              <h3 className="font-serif text-2xl font-light" style={{ color: "#1e3a2f" }}>Fiesta</h3>
+              <h3 className="font-serif text-2xl font-light" style={{ color: "#152920" }}>Fiesta</h3>
               <div className="flex gap-1">
                 <LeafDecor className="w-5 h-8 -rotate-6 opacity-60" />
                 <LeafDecor className="w-6 h-10 rotate-12 opacity-70" />
@@ -134,37 +134,37 @@ export default function EventInfo() {
             <ScrollReveal variant="fade-left" duration={800}>
               <SectionCard>
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border" style={{ borderColor: "#3d5c4a" }}>
-                  <svg className="h-5 w-5" style={{ color: "#3d5c4a" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5" style={{ color: "#152920" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#3d5c4a" }}>Fecha</h3>
-                <p className="font-serif text-xl" style={{ color: "#1e3a2f" }}>{eventData.date}</p>
+                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#152920" }}>Fecha</h3>
+                <p className="font-serif text-xl" style={{ color: "#152920" }}>{eventData.date}</p>
               </SectionCard>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-up" delay={100} duration={800}>
               <SectionCard>
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border" style={{ borderColor: "#3d5c4a" }}>
-                  <svg className="h-5 w-5" style={{ color: "#3d5c4a" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5" style={{ color: "#152920" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#3d5c4a" }}>Hora</h3>
-                <p className="font-serif text-xl" style={{ color: "#1e3a2f" }}>{eventData.time}</p>
+                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#152920" }}>Hora</h3>
+                <p className="font-serif text-xl" style={{ color: "#152920" }}>{eventData.time}</p>
               </SectionCard>
             </ScrollReveal>
 
             <ScrollReveal variant="fade-right" delay={200} duration={800}>
               <SectionCard>
                 <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full border" style={{ borderColor: "#3d5c4a" }}>
-                  <svg className="h-5 w-5" style={{ color: "#3d5c4a" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="h-5 w-5" style={{ color: "#152920" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#3d5c4a" }}>Dirección</h3>
-                <p className="font-serif text-lg" style={{ color: "#1e3a2f" }}>{eventData.address}</p>
+                <h3 className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#152920" }}>Dirección</h3>
+                <p className="font-serif text-lg" style={{ color: "#152920" }}>{eventData.address}</p>
               </SectionCard>
             </ScrollReveal>
           </div>

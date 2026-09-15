@@ -45,7 +45,7 @@ export default function MusicPlayer() {
       </svg>
 
       <ScrollReveal variant="zoom-in" duration={800}>
-      <p className="mb-4 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#3d5c4a" }}>
+      <p className="mb-4 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#152920" }}>
         Nuestra Canción
       </p>
       <button
@@ -65,7 +65,7 @@ export default function MusicPlayer() {
           </svg>
         )}
       </button>
-      <p className="mt-4 font-serif text-lg" style={{ color: "#1e3a2f" }}>
+      <p className="mt-4 font-serif text-lg" style={{ color: "#152920" }}>
         {isPlaying ? "Reproduciendo..." : "Reproducir Música"}
       </p>
 
@@ -73,12 +73,12 @@ export default function MusicPlayer() {
       <div className="mt-8 max-w-xl mx-auto px-4">
         <div className="flex items-center justify-center mb-4 gap-3">
           <div className="h-px w-12" style={{ backgroundColor: "#8fb09c" }}></div>
-          <svg className="w-5 h-5" style={{ color: "#3d5c4a" }} viewBox="0 0 24 24" fill="currentColor">
+          <svg className="w-5 h-5" style={{ color: "#152920" }} viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2C8 2 4 6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4-4-8-8-8zm0 10.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 7.5 12 7.5s2.5 1.1 2.5 2.5S13.4 12.5 12 12.5z"/>
           </svg>
           <div className="h-px w-12" style={{ backgroundColor: "#8fb09c" }}></div>
         </div>
-        <p className="font-serif text-base leading-relaxed italic" style={{ color: "#2d4a3a" }}>
+        <p className="font-serif text-base leading-relaxed italic" style={{ color: "#152920" }}>
           Con el corazón lleno de ilusión y felicidad, queremos invitarte a ser parte de uno de los días más importantes de nuestras vidas.
           Celebraremos nuestro amor, nuestros sueños y el comienzo de un hermoso camino que recorreremos juntos.
         </p>

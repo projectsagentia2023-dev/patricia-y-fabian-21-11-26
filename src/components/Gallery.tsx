@@ -46,10 +46,10 @@ export default function Gallery() {
         <div className="mx-auto max-w-6xl">
           <ScrollReveal variant="fade-left" duration={800}>
             <div className="mb-12 text-center">
-              <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#3d5c4a" }}>
+              <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#152920" }}>
                 Nuestros momentos
               </p>
-              <h2 className="font-serif text-3xl font-light md:text-4xl" style={{ color: "#1e3a2f" }}>
+              <h2 className="font-serif text-3xl font-light md:text-4xl" style={{ color: "#152920" }}>
                 Galería
               </h2>
             </div>

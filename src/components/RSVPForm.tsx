@@ -128,25 +128,25 @@ export default function RSVPForm() {
       <ScrollReveal variant="fade-right" duration={800}>
         <div className="mx-auto max-w-2xl">
           <div className="mb-12 text-center">
-            <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#3d5c4a" }}>
+            <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#152920" }}>
               RSVP
             </p>
-            <h2 className="font-serif text-3xl font-light md:text-4xl" style={{ color: "#1e3a2f" }}>
+            <h2 className="font-serif text-3xl font-light md:text-4xl" style={{ color: "#152920" }}>
               Confirmación de asistencia
             </h2>
-            <p className="mt-4 font-serif" style={{ color: "#3d5c4a" }}>
+            <p className="mt-4 font-serif" style={{ color: "#152920" }}>
               Por favor, completá el formulario para confirmar tu asistencia
             </p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-8" noValidate>
             <div className="p-6 md:p-8" style={{ border: "1px solid #c5d9ce", backgroundColor: "rgba(197,217,206,0.15)" }}>
-              <h3 className="mb-6 font-serif text-lg" style={{ color: "#1e3a2f" }}>
+              <h3 className="mb-6 font-serif text-lg" style={{ color: "#152920" }}>
                 Invitado principal
               </h3>
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="main-firstName" className="mb-2 block font-serif text-sm" style={{ color: "#3d5c4a" }}>
+                  <label htmlFor="main-firstName" className="mb-2 block font-serif text-sm" style={{ color: "#152920" }}>
                     Nombre *
                   </label>
                   <input
@@ -162,7 +162,7 @@ export default function RSVPForm() {
                   )}
                 </div>
                 <div>
-                  <label htmlFor="main-lastName" className="mb-2 block font-serif text-sm" style={{ color: "#3d5c4a" }}>
+                  <label htmlFor="main-lastName" className="mb-2 block font-serif text-sm" style={{ color: "#152920" }}>
                     Apellido *
                   </label>
                   <input
@@ -183,7 +183,7 @@ export default function RSVPForm() {
             {additionalGuests.map((guest, index) => (
               <div key={guest.id} className="p-6 md:p-8" style={{ border: "1px solid #c5d9ce", backgroundColor: "rgba(197,217,206,0.15)" }}>
                 <div className="mb-6 flex items-center justify-between">
-                  <h3 className="font-serif text-lg" style={{ color: "#1e3a2f" }}>
+                  <h3 className="font-serif text-lg" style={{ color: "#152920" }}>
                     Invitado adicional {index + 1}
                   </h3>
                   <button
@@ -196,7 +196,7 @@ export default function RSVPForm() {
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div>
-                    <label className="mb-2 block font-serif text-sm" style={{ color: "#3d5c4a" }}>
+                    <label className="mb-2 block font-serif text-sm" style={{ color: "#152920" }}>
                       Nombre *
                     </label>
                     <input
@@ -215,7 +215,7 @@ export default function RSVPForm() {
                     )}
                   </div>
                   <div>
-                    <label className="mb-2 block font-serif text-sm" style={{ color: "#3d5c4a" }}>
+                    <label className="mb-2 block font-serif text-sm" style={{ color: "#152920" }}>
                       Apellido *
                     </label>
                     <input
@@ -241,7 +241,7 @@ export default function RSVPForm() {
               type="button"
               onClick={addGuest}
               className="w-full border-dashed py-4 font-serif text-sm uppercase tracking-[0.15em] transition-all"
-              style={{ border: "1px dashed #8fb09c", color: "#3d5c4a" }}
+              style={{ border: "1px dashed #8fb09c", color: "#152920" }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = "#3d5c4a"; e.currentTarget.style.backgroundColor = "rgba(197,217,206,0.2)"; }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = "#8fb09c"; e.currentTarget.style.backgroundColor = "transparent"; }}
             >
@@ -259,7 +259,7 @@ export default function RSVPForm() {
             </button>
           </form>
 
-          <p className="mt-8 text-center font-serif text-sm italic" style={{ color: "#3d5c4a" }}>
+          <p className="mt-8 text-center font-serif text-sm italic" style={{ color: "#152920" }}>
             Las confirmaciones serán verificadas con la lista oficial de invitados
             proporcionada por los anfitriones.
           </p>
