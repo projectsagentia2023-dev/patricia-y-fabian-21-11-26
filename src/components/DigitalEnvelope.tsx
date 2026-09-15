@@ -25,37 +25,40 @@ export default function DigitalEnvelope() {
   };
 
   return (
-    <section className="bg-gold-50 px-6 py-20">
-      <ScrollReveal>
+    <section className="px-6 py-20" style={{ backgroundColor: "#e4ede8" }}>
+      <ScrollReveal variant="flip-up" duration={900}>
         <div className="mx-auto max-w-2xl text-center">
           <div className="mb-6 flex justify-center">
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-gold-600 bg-white">
-              <svg className="h-7 w-7 text-gold-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white" style={{ border: "1px solid #3d5c4a" }}>
+              <svg className="h-7 w-7" style={{ color: "#3d5c4a" }} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
           </div>
 
-          <h2 className="mb-4 font-serif text-3xl font-light text-beige-900 md:text-4xl">
+          <h2 className="mb-4 font-serif text-3xl font-light md:text-4xl" style={{ color: "#1e3a2f" }}>
             Lluvia de Sobres Digital
           </h2>
 
-          <p className="mb-10 font-serif text-beige-700 leading-relaxed">
+          <p className="mb-10 font-serif leading-relaxed" style={{ color: "#3d5c4a" }}>
             Si deseas realizar un regalo a los anfitriones, puedes hacerlo mediante
             transferencia.
           </p>
 
-          <div className="mx-auto mb-8 max-w-sm border border-gold-200 bg-white p-8 shadow-sm">
-            <p className="mb-2 font-serif text-sm uppercase tracking-[0.2em] text-gold-700">
+          <div className="mx-auto mb-8 max-w-sm bg-white p-8 shadow-sm" style={{ border: "1px solid #c5d9ce" }}>
+            <p className="mb-2 font-serif text-sm uppercase tracking-[0.2em]" style={{ color: "#3d5c4a" }}>
               Alias Mercado Pago
             </p>
-            <p className="font-serif text-2xl text-gold-800">{eventData.mercadoPagoAlias}</p>
+            <p className="font-serif text-2xl" style={{ color: "#1e3a2f" }}>{eventData.mercadoPagoAlias}</p>
           </div>
 
           <button
             type="button"
             onClick={copyAlias}
-            className="border border-gold-800 bg-gold-800 px-10 py-4 font-serif text-sm uppercase tracking-[0.25em] text-white transition-all duration-500 hover:bg-gold-700"
+            className="px-10 py-4 font-serif text-sm uppercase tracking-[0.25em] text-white transition-all duration-500"
+            style={{ backgroundColor: "#2d4a3a", border: "1px solid #2d4a3a" }}
+            onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#3d5c4a")}
+            onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#2d4a3a")}
           >
             {copied ? "¡Copiado!" : "Copiar Alias"}
           </button>

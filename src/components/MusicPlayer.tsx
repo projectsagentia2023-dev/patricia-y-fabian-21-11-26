@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
+import ScrollReveal from "./ScrollReveal";
 
 export default function MusicPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -8,10 +9,10 @@ export default function MusicPlayer() {
 
   useEffect(() => {
     const audio = new Audio("/Ed Sheeran - Perfect (Official Music Video).mp3");
-    audio.currentTime = 10;
-    
+    audio.currentTime = 16;
+
     audio.addEventListener('ended', () => {
-      audio.currentTime = 10;
+      audio.currentTime = 16;
       audio.play().catch(console.error);
     });
 
@@ -30,13 +31,27 @@ export default function MusicPlayer() {
   };
 
   return (
-    <section className="bg-beige-50 px-6 py-12 flex flex-col items-center text-center">
-      <p className="mb-4 font-serif text-sm uppercase tracking-[0.3em] text-gold-700">
+    <section className="relative overflow-hidden px-6 py-14 flex flex-col items-center text-center" style={{ backgroundColor: "#f3f7f0" }}>
+      {/* Decorative leaf top-left */}
+      <svg className="absolute top-0 left-0 w-32 h-32 opacity-20" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 190 C10 190 60 120 100 80 C140 40 190 10 190 10 C190 10 170 80 120 120 C70 160 10 190 10 190Z" fill="#3d5c4a"/>
+        <path d="M10 190 C40 150 80 110 130 70" stroke="#2d4a3a" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M60 160 C80 130 110 100 150 70" stroke="#2d4a3a" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
+      </svg>
+      {/* Decorative leaf bottom-right */}
+      <svg className="absolute bottom-0 right-0 w-32 h-32 opacity-20 rotate-180" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 190 C10 190 60 120 100 80 C140 40 190 10 190 10 C190 10 170 80 120 120 C70 160 10 190 10 190Z" fill="#3d5c4a"/>
+        <path d="M10 190 C40 150 80 110 130 70" stroke="#2d4a3a" strokeWidth="2" strokeLinecap="round"/>
+      </svg>
+
+      <ScrollReveal variant="zoom-in" duration={800}>
+      <p className="mb-4 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#3d5c4a" }}>
         Nuestra Canción
       </p>
       <button
         onClick={togglePlay}
-        className="flex h-16 w-16 items-center justify-center rounded-full bg-gold-800 text-white shadow-lg transition-transform hover:scale-110 hover:bg-gold-700 focus:outline-none focus:ring-4 focus:ring-gold-400"
+        className="flex h-16 w-16 items-center justify-center rounded-full text-white shadow-lg transition-transform hover:scale-110 focus:outline-none focus:ring-4"
+        style={{ backgroundColor: "#2d4a3a", boxShadow: "0 0 0 0 #8fb09c" }}
         aria-label={isPlaying ? "Pausar música" : "Reproducir música"}
       >
         {isPlaying ? (
@@ -50,9 +65,25 @@ export default function MusicPlayer() {
           </svg>
         )}
       </button>
-      <p className="mt-4 font-serif text-lg text-beige-900">
+      <p className="mt-4 font-serif text-lg" style={{ color: "#1e3a2f" }}>
         {isPlaying ? "Reproduciendo..." : "Reproducir Música"}
       </p>
+
+      {/* Invitation paragraph */}
+      <div className="mt-8 max-w-xl mx-auto px-4">
+        <div className="flex items-center justify-center mb-4 gap-3">
+          <div className="h-px w-12" style={{ backgroundColor: "#8fb09c" }}></div>
+          <svg className="w-5 h-5" style={{ color: "#3d5c4a" }} viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8 2 4 6 4 10c0 5.5 8 12 8 12s8-6.5 8-12c0-4-4-8-8-8zm0 10.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 7.5 12 7.5s2.5 1.1 2.5 2.5S13.4 12.5 12 12.5z"/>
+          </svg>
+          <div className="h-px w-12" style={{ backgroundColor: "#8fb09c" }}></div>
+        </div>
+        <p className="font-serif text-base leading-relaxed italic" style={{ color: "#2d4a3a" }}>
+          Con el corazón lleno de ilusión y felicidad, queremos invitarte a ser parte de uno de los días más importantes de nuestras vidas.
+          Celebraremos nuestro amor, nuestros sueños y el comienzo de un hermoso camino que recorreremos juntos.
+        </p>
+      </div>
+      </ScrollReveal>
     </section>
   );
 }

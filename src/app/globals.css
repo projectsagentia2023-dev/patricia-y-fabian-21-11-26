@@ -63,6 +63,11 @@
       transform: scale(1.15);
     }
   }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
 }
 
 html {
@@ -71,15 +76,15 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-beige-50);
-  color: var(--color-beige-900);
+  background-color: var(--color-green-50);
+  color: var(--color-green-900);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
-  background-color: var(--color-gold-200);
-  color: var(--color-gold-900);
+  background-color: var(--color-green-200);
+  color: var(--color-green-900);
 }
 
 /* Trigger vercel deploy */

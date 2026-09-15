@@ -41,17 +41,19 @@ export default function Gallery() {
   }, [selectedIndex, closeLightbox, goToPrevious, goToNext]);
 
   return (
-    <section className="bg-white px-6 py-20">
+    <section className="px-6 py-20" style={{ backgroundColor: "#f3f7f0" }}>
       <ScrollReveal>
         <div className="mx-auto max-w-6xl">
-          <div className="mb-12 text-center">
-            <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em] text-gold-700">
-              Nuestros momentos
-            </p>
-            <h2 className="font-serif text-3xl font-light text-beige-900 md:text-4xl">
-              Galería
-            </h2>
-          </div>
+          <ScrollReveal variant="fade-left" duration={800}>
+            <div className="mb-12 text-center">
+              <p className="mb-3 font-serif text-sm uppercase tracking-[0.3em]" style={{ color: "#3d5c4a" }}>
+                Nuestros momentos
+              </p>
+              <h2 className="font-serif text-3xl font-light md:text-4xl" style={{ color: "#1e3a2f" }}>
+                Galería
+              </h2>
+            </div>
+          </ScrollReveal>
 
           <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
             {galleryImages.map((image, index) => (
@@ -59,7 +61,8 @@ export default function Gallery() {
                 key={image}
                 type="button"
                 onClick={() => setSelectedIndex(index)}
-                className="group mb-4 block w-full break-inside-avoid overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-gold-600"
+                className="group mb-4 block w-full break-inside-avoid overflow-hidden focus:outline-none focus-visible:ring-2"
+                style={{ "--tw-ring-color": "#3d5c4a" } as React.CSSProperties}
               >
                 <div className="relative overflow-hidden">
                   <Image
@@ -97,11 +100,11 @@ export default function Gallery() {
 
           <button
             type="button"
-            onClick={(e) => {
-              e.stopPropagation();
-              goToPrevious();
-            }}
-            className="absolute left-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all hover:border-gold-400 hover:text-gold-400 md:flex"
+            onClick={(e) => { e.stopPropagation(); goToPrevious(); }}
+            className="absolute left-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all md:flex"
+            style={{ borderColor: "rgba(255,255,255,0.3)" }}
+            onMouseEnter={e => { e.currentTarget.style.borderColor = "#8fb09c"; e.currentTarget.style.color = "#8fb09c"; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; e.currentTarget.style.color = "white"; }}
             aria-label="Anterior"
           >
             ‹
@@ -124,11 +127,10 @@ export default function Gallery() {
 
           <button
             type="button"
-            onClick={(e) => {
-              e.stopPropagation();
-              goToNext();
-            }}
-            className="absolute right-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all hover:border-gold-400 hover:text-gold-400 md:flex"
+            onClick={(e) => { e.stopPropagation(); goToNext(); }}
+            className="absolute right-2 z-10 hidden h-12 w-12 items-center justify-center rounded-full border border-white/30 text-white transition-all md:flex"
+            onMouseEnter={e => { e.currentTarget.style.borderColor = "#8fb09c"; e.currentTarget.style.color = "#8fb09c"; }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; e.currentTarget.style.color = "white"; }}
             aria-label="Siguiente"
           >
             ›
